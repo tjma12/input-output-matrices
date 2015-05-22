@@ -21,23 +21,38 @@ Fetching a bunch of data from frames
 Mapping of PD error signals to physical DOFs:
 
 POP_A_RF45_Q -> MICH
+
 POP_A_RF9_I -> PRCL
+
 POP_A_RF9_I -> SRCL
+
 POP_A_RF45_I -> SRCL
+
 REFL_SERVO_SLOW -> MCL
+
 TR_REFL9 -> REFLBIAS
+
 OMC_DC -> DARM
 
 Mapping of physical DOF control signals to optics:
 
 DARM -> ETMX
+
 DARM -> ETMY
+
 OSC3 -> ETMX
+
 OSC3 -> ETMY
+
 SRCL FF -> ETMY
+
 MICH FF -> ITMY
+
 PRCL -> PRM
+
 SRCL -> SRM
+
 MICH -> BS
+
 MCL -> MC2
 
