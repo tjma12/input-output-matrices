@@ -44,7 +44,10 @@ PD_inputs = {1: 'POP_A_RF9_I',
 25: 'ASAIR_A_LF',
 26: 'TR_CARM',
 27: 'TR_REFL9',
-28: 'REFL_DC'}
+28: 'REFL_DC',
+29: 'OMC DC',
+30: 'ASAIR_A_RF45_I',
+31: 'ASAIR_A_RF45_Q'}
 
 AS_inputs = {1: 'OMC_DC',
 2: 'ASAIR_A_RF45_I',
@@ -80,7 +83,8 @@ DOF_outputs = {1: 'MICH',
 8: 'OSC2',
 9: 'OSC3',
 10: 'MICH FF',
-11: 'SRCL FF'}
+11: 'SRCL FF',
+12: 'CPS FF'}
 
 # output matrix maps DOF control signals to specific optics
 
