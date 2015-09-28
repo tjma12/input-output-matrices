@@ -8,8 +8,8 @@ import sys
 
 start_gps = float(sys.argv[1])
 end_gps = start_gps + 1.0/16
-ifo = 'H'
-frames = 'H1_R'
+ifo = 'L'
+frames = 'L1_R'
 connection = datafind.GWDataFindHTTPConnection()
 cache = connection.find_frame_urls(ifo, frames, start_gps, end_gps, urltype='file')
 
@@ -43,7 +43,10 @@ PD_inputs = {1: 'AS_A_RF45_I',
 24: 'TR_X_B',
 25: 'TR_Y_A',
 26: 'TR_Y_B',
-27: 'AS_C_DC'}
+27: 'AS_C_DC',
+28: 'IM4 Trans',
+29: 'POP_X_RF36_I',
+30: 'POP_X_RF36_Q'}
 
 # the PD signals are mapped onto the alignment degrees of freedom
 
@@ -89,7 +92,8 @@ DOF_outputs = {1: 'INP1',
 23: 'OSC1',
 24: 'OSC2',
 25: 'OSC3',
-26: 'OSC4'}
+26: 'OSC4',
+27: 'LOCKIN OSC1'}
 # output matrix maps DOF control signals to specific optics
 
 optics = {1: 'PRM',
@@ -113,7 +117,8 @@ optics = {1: 'PRM',
 19: 'OM2',
 20: 'OM3',
 21: 'TMSX',
-22: 'TMSY'}
+22: 'TMSY',
+23: 'PM1'}
 
 # read in channel lists to populate each input matrix
 

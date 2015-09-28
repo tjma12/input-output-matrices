@@ -8,8 +8,8 @@ import sys
 
 start_gps = float(sys.argv[1])
 end_gps = start_gps + 1.0/16
-ifo = 'H'
-frames = 'H1_R'
+ifo = 'L'
+frames = 'L1_R'
 connection = datafind.GWDataFindHTTPConnection()
 cache = connection.find_frame_urls(ifo, frames, start_gps, end_gps, urltype='file')
 
@@ -44,7 +44,10 @@ PD_inputs = {1: 'POP_A_RF9_I',
 25: 'ASAIR_A_LF',
 26: 'TR_CARM',
 27: 'TR_REFL9',
-28: 'REFL_DC'}
+28: 'REFL_DC',
+29: 'OMC DC',
+30: 'ASAIR_A_RF45_I',
+31: 'ASAIR_A_RF45_Q'}
 
 AS_inputs = {1: 'OMC_DC',
 2: 'ASAIR_A_RF45_I',
