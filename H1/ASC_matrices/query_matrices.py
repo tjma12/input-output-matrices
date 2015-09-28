@@ -89,7 +89,8 @@ DOF_outputs = {1: 'INP1',
 23: 'OSC1',
 24: 'OSC2',
 25: 'OSC3',
-26: 'OSC4'}
+26: 'OSC4',
+27: 'LOCKIN OSC1'}
 # output matrix maps DOF control signals to specific optics
 
 optics = {1: 'PRM',
@@ -113,7 +114,8 @@ optics = {1: 'PRM',
 19: 'OM2',
 20: 'OM3',
 21: 'TMSX',
-22: 'TMSY'}
+22: 'TMSY',
+23: 'PM1'}
 
 # read in channel lists to populate each input matrix
 
